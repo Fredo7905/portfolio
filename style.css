@@ -50,23 +50,44 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #0073b1;
 }
- /* Styles pour le menu hamburger */
+  /* Styles pour le menu hamburger */
         .menu-toggle {
             display: none;
             font-size: 2em;
             cursor: pointer;
+            background: none;
+            border: none;
+            color: #fff;
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            z-index: 1001;
         }
-        
+
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            background: #004d80;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            color: white;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
-                background: none;
-                border: none;
-                color: #fff;
                 position: absolute;
-                right: 20px;
-                top: 15px;
-                z-index: 1001;
+                right: 15px;
+                top: 10px;
             }
             
             .nav-links {
