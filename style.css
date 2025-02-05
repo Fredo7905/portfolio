@@ -50,7 +50,38 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #0073b1;
 }
-
+/* Styles pour le menu hamburger */
+        .menu-toggle {
+            display: none;
+            font-size: 2em;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+            
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #004d80;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                padding: 10px 0;
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                padding: 10px 0;
+            }
+        }
 /* Sections */
 section {
     padding: 60px 20px;
