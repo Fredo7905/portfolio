@@ -9,9 +9,12 @@
 </head>
 <body>
     <!-- Barre de navigation -->
-    <nav>
+     <nav>
         <div class="logo">Frédéric Wagener - Commercial</div>
-        <ul>
+        <div class="menu-toggle" id="mobile-menu">
+            ☰
+        </div>
+        <ul class="nav-links">
             <li><a href="#about">À propos</a></li>
             <li><a href="#experience">Expérience</a></li>
             <li><a href="#skills">Compétences</a></li>
@@ -175,6 +178,14 @@
     <footer>
         <p>&copy; 2025 Frédéric Wagener. Tous droits réservés.</p>
     </footer>
+     <script>
+        const mobileMenu = document.getElementById("mobile-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        mobileMenu.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+        });
+    </script>
 </body>
 </html>
 
