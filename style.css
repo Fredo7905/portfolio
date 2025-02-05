@@ -50,7 +50,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #0073b1;
 }
-/* Styles pour le menu hamburger */
+ /* Styles pour le menu hamburger */
         .menu-toggle {
             display: none;
             font-size: 2em;
@@ -60,6 +60,13 @@ nav ul li a:hover {
         @media (max-width: 768px) {
             .menu-toggle {
                 display: block;
+                background: none;
+                border: none;
+                color: #fff;
+                position: absolute;
+                right: 20px;
+                top: 15px;
+                z-index: 1001;
             }
             
             .nav-links {
@@ -72,6 +79,7 @@ nav ul li a:hover {
                 width: 100%;
                 text-align: center;
                 padding: 10px 0;
+                z-index: 1000;
             }
             
             .nav-links.active {
