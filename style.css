@@ -27,12 +27,18 @@ nav {
     align-items: center;
     padding: 15px 30px;
     width: 100%;
+    max-width: 1000px;
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
 }
 
 .nav-links {
@@ -61,6 +67,9 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
+    nav {
+        padding: 15px;
+    }
     .nav-links {
         display: none;
         flex-direction: column;
@@ -77,6 +86,12 @@ nav {
     }
     .menu-toggle {
         display: block;
+    }
+    .content-section {
+        padding: 20px;
+    }
+    .content-section h1, .content-section h2 {
+        font-size: 1.8em;
     }
 }
 
@@ -131,15 +146,6 @@ nav {
     max-width: 1000px;
     text-align: left;
 }
-.content-section ul li{
-    
-    text-align: center;
-}
-
-.content-section p {
-    
-    text-align: center;
-}
 
 .content-section h1, .content-section h2 {
     text-align: center;
@@ -186,7 +192,9 @@ footer {
     padding: 15px;
     margin-top: 20px;
     width: 100%;
+    max-width: 1000px;
 }
+
 
 
 
