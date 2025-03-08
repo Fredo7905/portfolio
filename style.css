@@ -27,7 +27,6 @@ nav {
     align-items: center;
     padding: 15px 30px;
     width: 100%;
-    max-width: 1000px;
     position: fixed;
     top: 0;
     left: 50%;
@@ -192,7 +191,6 @@ footer {
     padding: 15px;
     margin-top: 20px;
     width: 100%;
-    max-width: 1000px;
 }
 
 
