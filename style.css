@@ -53,6 +53,11 @@ nav {
     margin: 0 auto;
 }
 
+.intro h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
 .profile-photo {
     width: 150px;
     height: 150px;
@@ -80,6 +85,11 @@ nav {
     width: 100%;
     max-width: 1000px;
     text-align: left;
+}
+
+.content-section h1 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -118,7 +128,6 @@ footer {
     width: 100%;
     max-width: 1000px;
 }
-
 
 
 
