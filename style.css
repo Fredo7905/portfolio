@@ -56,6 +56,20 @@ nav {
     font-weight: bold;
 }
 
+/* Expérience et Sections */
+.content-section {
+    background: white;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #8B5E3B;
+    text-align: center;
+}
+
 /* Centres d'intérêt */
 .interests-container {
     display: flex;
@@ -76,20 +90,7 @@ nav {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* Section Contact */
-.content-section {
-    background: white;
-    padding: 30px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    color: #8B5E3B;
-    text-align: center;
-}
-
+/* Contact */
 footer {
     background-color: #8B5E3B;
     color: white;
@@ -97,6 +98,7 @@ footer {
     padding: 10px;
     margin-top: 20px;
 }
+
 
 
 
