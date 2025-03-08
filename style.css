@@ -156,6 +156,9 @@ h2 {
     color: #8B5E3B;
 }
 
+.experience-item {
+    text-align: center;
+}
 /* Centres d'intérêt */
 .interests-container {
     display: flex;
