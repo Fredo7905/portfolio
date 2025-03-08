@@ -27,7 +27,6 @@ nav {
     align-items: center;
     padding: 15px 30px;
     width: 100%;
-    max-width: 1000px;
     position: fixed;
     top: 0;
     left: 50%;
@@ -132,6 +131,15 @@ nav {
     max-width: 1000px;
     text-align: left;
 }
+.content-section ul li{
+    
+    text-align: center;
+}
+
+.content-section p {
+    
+    text-align: center;
+}
 
 .content-section h1, .content-section h2 {
     text-align: center;
@@ -178,7 +186,6 @@ footer {
     padding: 15px;
     margin-top: 20px;
     width: 100%;
-    max-width: 1000px;
 }
 
 
