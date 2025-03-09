@@ -210,7 +210,9 @@ footer {
 .content-section  p {
     margin-left: 15%;
 }
-
+#about p{
+    text-align: center;
+}
 
 
 
