@@ -216,6 +216,22 @@ footer {
 #contact p{
     text-align: center;
 }
+#skills li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#qualities li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#education li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#languages li{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
 
 
 
