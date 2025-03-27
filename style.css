@@ -1,260 +1,220 @@
 /* Style général */
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f7f9fc;
 }
 
-.container {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: left;
-    padding: 0 20px;
-}
-
-/* Barre de navigation */
+/* ===== NAVIGATION ===== */
 nav {
-    background-color: #8B5E3B;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  background-color: #0a4b78;
+  color: white;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
-    font-size: 2.2em;
-    font-weight: bold;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 .nav-links {
-    list-style: none;
-    display: flex;
-    margin-right: 50px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.nav-links li {
-    margin: 0 20px;
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1em;
+.nav-links li a:hover {
+  text-decoration: underline;
 }
 
-/* Menu hamburger */
-.menu-toggle {
-    display: none;
-    font-size: 24px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    color: white;
-}
-
-@media screen and (max-width: 768px) {
-    nav {
-        padding: 15px;
-    }
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #8B5E3B;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        padding: 10px 0;
-        text-align: center;
-    }
-    .nav-links.active {
-        display: flex;
-    }
-    .menu-toggle {
-        display: block;
-    }
-    .content-section {
-        padding: 20px;
-    }
-    .content-section h1, .content-section h2 {
-        font-size: 1.8em;
-    }
-}
-
-/* Section d'introduction */
+/* ===== INTRO ===== */
 .intro {
-    text-align: center;
-    padding: 100px 0;
-    background-color: #FFF5E1;
-    padding: 40px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1000px;
-    
-}
-
-.intro h1 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
+  text-align: center;
+  padding: 80px 40px;
+  background-color: #eaf1f8;
 }
 
 .profile-photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 .download-button {
-    background-color: #8B5E3B;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 15px;
-    transition: background 0.3s;
-    font-size: 1.2em;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #0a4b78;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
 
 .download-button:hover {
-    background-color: #6a4127;
+  background-color: #06385a;
 }
 
-/* Expérience et Sections */
+/* ===== CONTENT SECTIONS ===== */
 .content-section {
-    background: white;
-    padding: 40px;
-    margin: 20px auto;
-    border-radius: 10px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 1000px;
-    text-align: left;
-    /*! margin-left: 50px; */
-}
-
-.content-section h1, .content-section h2 {
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
-
-.content-section ul {
-    list-style-position: inside;
-    padding-left: 20px;
-    margin-left: 15%;
+  padding: 80px 60px;
+  width: 100%;
 }
 
 h2 {
-    color: #8B5E3B;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #0a4b78;
+  border-bottom: 2px solid #0a4b78;
+  padding-bottom: 8px;
 }
 
-/* Centres d'intérêt */
-.interests-container {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 30px;
-    flex-wrap: wrap;
+h3 {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: #222;
 }
 
-.interest-item {
-    text-align: center;
-    max-width: 180px;
+p {
+  margin-bottom: 10px;
 }
 
-.interest-photo {
-    width: 180px;
-    height: 180px;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
-.interest-photo:hover {
-    transform: scale(1.1);
+/* ===== EXPERIENCES ===== */
+.experience-item {
+  margin-bottom: 50px;
 }
 
-/* Contact */
-footer {
-    background-color: #8B5E3B;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    margin-top: 20px;
-    width: 100%;
-}
-.experience-item h3 {
-    margin-left: 15%;
-}
-#experience  p {
-    margin-left: 15%;
-}
-#about p{
-    text-align: center;
-}
-#contact p{
-    text-align: center;
-}
-#skills li{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-#qualities li{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-#education li{
-    padding-top: 5px;
-    padding-bottom: 5px;
-}
-#languages li{
-    padding-top: 5px;
-    padding-bottom: 5px;
+.highlight {
+  background-color: #eef6ff;
+  border-left: 4px solid #0a4b78;
+  padding: 10px 15px;
+  margin-top: 15px;
+  border-radius: 6px;
+  font-style: italic;
 }
 
+/* ===== COMPETENCES EN CARDS ===== */
 .card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 20px;
-    margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .card {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-    font-weight: 500;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-left: 5px solid #0a4b78;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-weight: 500;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #0a4b78;
 }
 
 .card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
 }
 
+/* ===== FORMATIONS ===== */
+.education-item {
+  margin-bottom: 20px;
+  padding: 16px 20px;
+  background-color: #fff;
+  border-left: 4px solid #0a4b78;
+  border-radius: 8px;
+}
+
+/* ===== CENTRES D'INTERET ===== */
+.interests-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.interest-item {
+  text-align: center;
+}
+
+.interest-photo {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===== CONTACT ===== */
+#contact a {
+  color: #0a4b78;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0a4b78;
+  color: white;
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .content-section {
+    padding: 50px 20px;
+  }
+}
 
 
 
