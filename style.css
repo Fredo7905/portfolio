@@ -15,10 +15,9 @@ body {
 
 /* ===== NAVIGATION ===== */
 nav {
-  position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     width: 100%;
     background-color: #0a4b78;
     color: white;
@@ -28,11 +27,12 @@ nav {
     align-items: center;
     z-index: 999;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    flex-wrap: wrap;
 }
 
 .logo {
-  font-weight: bold;
-  font-size: 1.2em;
+    font-weight: bold;
+    font-size: 1.2em;
 }
 
 .nav-links {
@@ -226,6 +226,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+* Hamburger visible uniquement sur mobile */
 .hamburger {
     display: none;
     font-size: 2rem;
@@ -234,6 +235,14 @@ footer {
     color: white;
 }
 
+/* NAV LINKS – desktop */
+.nav-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+/* NAV – Responsive mobile */
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
@@ -255,7 +264,6 @@ footer {
         margin: 10px 0;
     }
 }
-
 
 
 
