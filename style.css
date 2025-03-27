@@ -221,7 +221,6 @@ footer {
     list-style: none;
 }
 
-/* NAV – Responsive mobile */
 @media screen and (max-width: 768px) {
     .hamburger {
         display: block;
@@ -243,6 +242,7 @@ footer {
         margin: 10px 0;
     }
 }
+
 
 
 
