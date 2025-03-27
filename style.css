@@ -243,6 +243,46 @@ footer {
     }
 }
 
+@media screen and (max-width: 768px) {
+    /* Centre tout dans les sections */
+    .content-section {
+        text-align: center;
+    }
+
+    .content-section h2,
+    .content-section h3,
+    .content-section p,
+    .content-section ul,
+    .content-section li {
+        text-align: center;
+    }
+
+    /* Grilles centrées */
+    .card-grid,
+    .skills-grid,
+    .interests-container {
+        justify-content: center;
+    }
+
+    /* Intérieur des cards */
+    .card ul {
+        padding-left: 0;
+        list-style-position: inside;
+    }
+
+    /* Bouton CV */
+    .download-button {
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+    }
+
+    /* Réduction image profil si besoin */
+    .profile-photo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 
 
